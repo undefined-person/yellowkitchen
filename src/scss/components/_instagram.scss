@@ -1,0 +1,21 @@
+.instagram {
+  padding-bottom: 72px;
+
+  &__title {
+    @include title-primary;
+
+    margin: 0;
+
+    &-subtext {
+      color: $dark-gray-color;
+    }
+  }
+
+  &__content {
+    margin-top: 15px;
+  }
+
+  &__img {
+    grid-column: 4 span;
+  }
+}

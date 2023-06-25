@@ -1,0 +1,116 @@
+.header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  border-bottom: 1px solid $gray-color;
+  height: $header-height;
+
+  &__container {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+    column-gap: 48px;
+  }
+
+  &__link {
+    @include button-s;
+
+    display: flex;
+    column-gap: 2px;
+    align-items: center;
+    color: $dark-gray-color;
+  }
+}
+
+.burger {
+  @include icon;
+}
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 36px;
+  width: 30vw;
+  height: calc(100vh - $header-height);
+  box-shadow: $aside-shadow;
+  background: $light-color;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  row-gap: 24px;
+
+  &__link {
+    @include button-s;
+
+    display: flex;
+    column-gap: 2px;
+    align-items: center;
+    color: $dark-gray-color;
+  }
+
+  &__contact {
+    display: flex;
+    column-gap: 13px;
+    align-items: flex-start;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 6px;
+    }
+
+    &-call {
+      @include button-s;
+    }
+
+    &-time {
+      @include paragraph-xs;
+
+      color: $dark-gray-color;
+    }
+  }
+
+  &__select {
+    margin-left: auto;
+
+    &-btn {
+      @include button-xs;
+
+      display: flex;
+      column-gap: 6px;
+      align-items: center;
+      color: $dark-gray-color;
+    }
+  }
+}
+
+.nav {
+  &__item {
+    border-top: 1px solid $light-gray-color;
+    padding: 22px 0;
+
+    &:last-child {
+      border-bottom: 1px solid $light-gray-color;
+    }
+  }
+
+  &__link {
+    @include button-s;
+
+    color: $dark-gray-color;
+  }
+}
+
+.sidebar.menu--active {
+  transform: translateX(0);
+  visibility: visible;
+}

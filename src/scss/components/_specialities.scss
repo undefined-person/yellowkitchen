@@ -1,0 +1,76 @@
+.specialities {
+  padding: 72px 0;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include title-primary;
+
+    margin: 0;
+  }
+
+  &__link {
+    @include secondary-btn;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    height: 48px;
+    color: $dark-gray-color;
+  }
+
+  &__content {
+    position: relative;
+    margin-top: 48px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2;
+    border-radius: 6px;
+    padding: 24px 0;
+    box-shadow: $slider-shadow;
+    row-gap: 16px;
+  }
+
+  &__text {
+    @include paragraph-s;
+  }
+}
+
+.slider {
+  &__prev,
+  &__next {
+    @include icon;
+
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  &__prev {
+    @include icon;
+
+    left: -25px;
+    top: 50%;
+  }
+
+  &__next {
+    @include icon;
+
+    right: -25px;
+    top: 50%;
+
+    img {
+      transform: rotate(180deg);
+    }
+  }
+}

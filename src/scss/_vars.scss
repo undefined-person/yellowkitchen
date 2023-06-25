@@ -1,0 +1,42 @@
+/* stylelint-disable scss/declaration-nested-properties */
+// fonts
+$main-family: "MartelSans", sans-serif;
+$second-family: "Poppins", sans-serif;
+$third-family: "OpenSans", sans-serif;
+
+// vars
+$content-width: 1256px;
+$container-offset: 30px;
+$container-offset-tablet: 24px;
+$container-width: calc(#{$content-width} + (#{$container-offset} * 2));
+$offset: 24px;
+$grid-columns: 16;
+$header-height: 72px;
+
+// fonts sizes
+$font-size-xxs: 12px;
+$font-size-s: 16px;
+$font-size-xl: 24px;
+$font-size-xxl: 36px;
+$font-size-xxxl: 58px;
+
+// line heights
+$line-height-xxs: 16px;
+$line-height-s: 20px;
+$line-height-lg: 24px;
+$line-height-xl: 32px;
+$line-height-xxl: 64px;
+
+// colors
+$light-color: #fff;
+$light-gray-color: #f2f4fa;
+$gray-color: #d4d7e5;
+$dark-gray-color: #9093a6;
+$extra-dark-gray-color: #3f4255;
+$light-yellow-color: #fff7cc;
+$yellow-color: #b79c10;
+$primary-yellow-color: #ffe145;
+$box-shadow: 0 8px 40px 0 rgba(0 0 0 / 8%);
+$box-hover-shadow: 0 4px 8px 0 rgba(0 0 0 / 10%);
+$aside-shadow: 0 10px 24px 0 rgba(0 0 0 / 10%);
+$slider-shadow: 0 2px 16px 0 rgba(60 62 74 / 8%);

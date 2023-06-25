@@ -1,0 +1,58 @@
+@mixin button-xs {
+  font-family: $main-family;
+  font-weight: 800;
+  font-size: $font-size-xxs;
+  line-height: $line-height-xxs;
+  color: $extra-dark-gray-color;
+}
+
+@mixin button-s {
+  font-family: $main-family;
+  font-weight: 700;
+  font-size: $font-size-s;
+  line-height: $line-height-s;
+  letter-spacing: 0.5px;
+  color: $extra-dark-gray-color;
+}
+
+@mixin paragraph-xs {
+  font-family: $main-family;
+  font-size: $font-size-xxs;
+  line-height: $line-height-xxs;
+  color: $extra-dark-gray-color;
+}
+
+@mixin paragraph-s {
+  font-family: $main-family;
+  font-weight: 300;
+  font-size: $font-size-s;
+  line-height: $line-height-lg;
+  letter-spacing: 0.5px;
+  color: $extra-dark-gray-color;
+}
+
+@mixin title-secondary {
+  font-family: $second-family;
+  font-weight: 600;
+  font-size: $font-size-xl;
+  line-height: $line-height-xl;
+  color: $extra-dark-gray-color;
+}
+
+@mixin title-primary {
+  font-family: $second-family;
+  font-weight: 300;
+  font-size: $font-size-xxl;
+  line-height: $line-height-xxl;
+  letter-spacing: 2.88px;
+  color: $extra-dark-gray-color;
+}
+
+@mixin title-banner {
+  font-family: $second-family;
+  font-weight: 300;
+  font-size: $font-size-xxxl;
+  line-height: $line-height-xxl;
+  letter-spacing: 2.9px;
+  color: $extra-dark-gray-color;
+}

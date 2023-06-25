@@ -1,0 +1,83 @@
+.hero {
+  position: relative;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - $header-height);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    grid-column: 7 span;
+    row-gap: 88px;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__title {
+    @include title-banner;
+
+    margin: 0;
+    padding-top: 120px;
+  }
+
+  &__delivery {
+    display: flex;
+    column-gap: 24px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid $primary-yellow-color;
+      border-radius: 4px;
+      padding: 16px 24px;
+      text-align: center;
+      row-gap: 4px;
+    }
+
+    &-title {
+      @include button-s;
+
+      margin: 0;
+    }
+
+    &-text {
+      @include paragraph-xs;
+    }
+  }
+
+  &__bottom {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+  }
+
+  &__features {
+    display: flex;
+    column-gap: 40px;
+    grid-column: 10 span;
+    padding-left: 92px;
+    height: 104px;
+    box-shadow: $box-shadow;
+
+    &-item {
+      display: flex;
+      column-gap: 16px;
+      align-items: center;
+    }
+
+    &-text {
+      @include paragraph-s;
+
+      max-width: 225px;
+    }
+  }
+}
